@@ -6,7 +6,7 @@ let larguraPersonagem = 110;
 //let posicaoSpriteY = this.matriz[this.frameAtual][1];
 let frameAtual = 0;
 let larguraAreaSprite = 220;
-let alturaAreaSprite = 270;  
+let alturaAreaSprite = 270;   
 
 class Personagem extends Animacao{
     constructor(matriz, imagemCompleta, posPersonagemEixoX, variacaoEixoY, posPersonagemEixoY, larguraPersonagem,
@@ -28,6 +28,7 @@ class Personagem extends Animacao{
         if (this.qtdMaxPulos < 2) {
             this.velocidadePulo = this.alturaPulo;   
             this.qtdMaxPulos++;  
+            
         }
     }
 
